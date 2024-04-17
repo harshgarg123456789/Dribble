@@ -104,7 +104,7 @@ const Navbar = () => {
             {
                 view?(
                     <div className='bg-gray-50 z-10 absolute w-[300px] h-[700px]'>
-                        <p className='text-2xl p-5 ' onClick={changeview}><RxCross1/></p>
+                        <p className='text-2xl p-5 cursor-pointer' onClick={changeview}><RxCross1/></p>
                         <img className='h-[120px] w-[120px] mx-auto rounded-full ' src={user?.image} alt="" />
                         <p className='text-orange-500 mt-5 font-semibold text-center'>{user?.username}</p>
                         <div>
@@ -117,7 +117,7 @@ const Navbar = () => {
                         </div> 
                     </div>
                 ):(
-                    <div className=' text-2xl p-5' onClick={changeview}><VscThreeBars/></div>
+                    <div className=' text-2xl p-5 cursor-pointer' onClick={changeview}><VscThreeBars/></div>
                 )
             }
         </div>
