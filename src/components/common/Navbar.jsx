@@ -103,7 +103,7 @@ const Navbar = () => {
         <div className='flex flex-col gap-3 sm:hidden relative '>
             {
                 view?(
-                    <div className='bg-red-50 z-10 absolute w-[300px] h-screen'>
+                    <div  className='bg-red-50 z-10 absolute w-[300px] h-screen'>
                         <p className='text-2xl p-5 cursor-pointer' onClick={changeview}><RxCross1/></p>
                         <img className='h-[120px] w-[120px] mx-auto rounded-full ' src={user?.image} alt="" />
                         <p className='text-orange-500 mt-5 font-semibold text-center'>{user?.username}</p>
