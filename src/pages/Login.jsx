@@ -5,7 +5,7 @@ import RightPart from '../components/Login/RightPart'
 const Login = () => {
   return (
     <div>
-        <div className=' flex flex-col md:flex-row min-w-[100vh] min-h-[100vh]'>
+        <div className=' flex flex-col md:flex-row min-w-[100vw] min-h-[100vh]'>
             <LeftPart/>
             <RightPart/>
         </div>
