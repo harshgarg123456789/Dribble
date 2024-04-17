@@ -24,7 +24,7 @@ const VerifyEmail = () => {
   },[])
   
   return (
-    <div className='min-w-[100vw] '>
+    <div className='min-w-[100vw] h-[100%]'>
         <Navbar/>
         <div className='w-7/12 mx-auto mt-12 sm:my-24 gap-4 text-gray-500 text-sm font-semibold  flex flex-col items-center'>
           <h2 className='text-2xl font-bold text-black text-center'>Please verify your email...</h2>
