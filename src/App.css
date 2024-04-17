@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar{
+    animation: slide 1s linear;
+
+    @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    }
+}
