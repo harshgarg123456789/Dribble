@@ -61,7 +61,7 @@ const Navbar = () => {
 
 
   return (
-    <div className={`${view ? "min-h-[100%] w-[300px] bg-red-500 border border-blue-500 z-10":""}`}>
+    <div className={`${view ? "h-[1000px]":""}`}>
         <div className=' hidden sm:flex flex-row justify-between py-3 px-4 border border-b-2 border-gray-100'>
             <div className='flex flex-row'>
                 <ul className='flex flex-row text-gray-500 items-center gap-6 text-sm font-semibold'>
@@ -100,10 +100,10 @@ const Navbar = () => {
             </div>
             
         </div>
-        <div className={`flex flex-col gap-3 sm:hidden relative ${view?"min-h-[100%] w-[300px] bg-red-500 border border-green-500 z-10":""}`}>
+        <div className={`flex flex-col gap-3 sm:hidden relative ${view?"h-[1000px]":""}`}>
             {
                 view?(
-                    <div className='bg-gray-50 z-10 absolute w-[300px] h-[100%] bg-red-500 border border-yellow-500'>
+                    <div className='bg-gray-50 z-10 absolute w-[300px] h-[1000px]'>
                         <p className='text-2xl p-5 cursor-pointer' onClick={changeview}><RxCross1/></p>
                         <img className='h-[120px] w-[120px] mx-auto rounded-full ' src={user?.image} alt="" />
                         <p className='text-orange-500 mt-5 font-semibold text-center'>{user?.username}</p>
