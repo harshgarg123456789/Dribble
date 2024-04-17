@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import SignUp from './pages/SignUp';
 import KnowYouBetter from './pages/KnowYouBetter';
 import WhatBringsYou from './pages/WhatBringsYou';
@@ -57,7 +57,8 @@ function App() {
             <ChangeEmail/>
           </PrivateRoute>
         }/>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Navigate to="/signup" />}/>
+        <Route path='/dribble' element={<Home/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
     </div>
